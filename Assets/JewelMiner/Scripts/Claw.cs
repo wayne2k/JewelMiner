@@ -8,6 +8,7 @@ namespace RollRoti.JewelMiner
 		public Transform origin;
 		public float speed = 4f;
 		public Gun gun;
+		public ScoreManager scoreManager;
 
 		Vector3 _target;
 		int _jewelValue = 100;
@@ -34,6 +35,7 @@ namespace RollRoti.JewelMiner
 				gun.CollectedObject ();
 				if (_hitJewel)
 				{
+					scoreManager.AddPoints (_jewelValue);
 					_hitJewel = false;
 				}
 				Destroy (_childObject);
