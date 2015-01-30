@@ -1,2 +1,2 @@
 # JewelMiner
-Casual Jewel Mining Game
+Casual Jewel Mining Game in Unity
